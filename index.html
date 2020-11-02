@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset=utf-8>
+  <title></title>
+  <link rel="stylesheet" href="main.css"></style>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<h1>Cladding</h1>
+<select onchange="$('#imageToSwap').attr('src', this.options[this.selectedIndex].value);">
+    <option value="./img/cedar.png" selected>Cedar</option>
+    <option value="./img/rockcote.png">Rockcote</option>
+    <option value="./img/brick.png">Brick</option>
+</select>
+  
+<br><br>
+
+<img id="imageToSwap" class="profile" src="./img/cedar.png">
+</body>
+</html>

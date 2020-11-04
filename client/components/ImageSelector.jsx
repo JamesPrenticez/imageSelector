@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Homepage() {
+function ImageSelector() {
 
     const setPicture = () => {
         var img = document.getElementById("claddingDropDown");
@@ -10,7 +10,7 @@ function Homepage() {
 
     return (
         <>
-            <h1>Homepage</h1>
+            <h1>ImageSelector</h1>
 
             <div id="cladding">
                 <img id="claddingImg" src="./img/default.png"></img>
@@ -28,4 +28,4 @@ function Homepage() {
 }
 
 
-export default Homepage
+export default ImageSelector

@@ -1,11 +1,13 @@
 import React from 'react'
 
-import Homepage from './Homepage'
+import ImageSelector from './ImageSelector'
+import PageScale from './PageScale'
 
 const App = () => {
   return (
     <>
-    <Homepage/>
+    {/* <ImageSelector/> */}
+    <PageScale/>
     </>
   )
 }

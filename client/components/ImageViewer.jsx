@@ -61,9 +61,9 @@ return(
         <button className="btn" onClick={() => this.filterSelection('all')}> Show all</button>
         <button className="btn" onClick={() => this.filterSelection('alexandra')}> Alexandra</button>
 
-        <button className="btn" onClick={() => { this.filterSelection('andrew'); this.namePlug("1");}}>Andrew x2</button>
-        <button className="btn" onClick={() => this.filterSelection('andrew'), this.namePlug("1")}> Andrew</button>
+        {/* <button className="btn" onClick={() => { this.filterSelection('andrew'); this.namePlug("1");}}>Andrew x2</button> */}
 
+        <button className="btn" onClick={() => this.filterSelection('andrew')}>Andrew</button>
         <button className="btn" onClick={() => this.filterSelection('anne')}> Anne</button>
         <button className="btn" onClick={() => this.filterSelection('cathrine')}> Cathrine</button>
         <button className="btn" onClick={() => this.filterSelection('charles')}> Anne</button>
@@ -82,13 +82,13 @@ return(
 
         <div className="row">
 
-            <div className={jobName}>
+            {/* <div className={jobName}>
                 <div className="content">
                 <img src={"./img/houses/" + `${jobName}` + "/" + `${jobName}` + ".png"} alt={jobName}></img>
                 <h4>{jobName}</h4>
                 <p>test</p>
                 </div>
-            </div>
+            </div> */}
 
             <div className="column alexandra">
                 <div className="content">
@@ -119,6 +119,39 @@ return(
                 <div className="content">
                 <img src="./img/houses/alexandra/alexandra_elevation.png" alt="alexandra"></img>
                 <h4>Alexandra</h4>
+                <p>Elevation</p>
+                </div>
+            </div>
+            
+            <div className="column andrew">
+                <div className="content">
+                <img src="./img/houses/andrew/andrew.png" alt="andrew"></img>
+                <h4>andrew</h4>
+                <p>Cover</p>
+                </div>
+            </div>
+
+            <div className="column andrew">
+                <div className="content">
+                <img src="./img/houses/andrew/andrew_plan.png" alt="andrew"></img>
+                <h4>andrew</h4>
+                <p>Floor</p>
+                </div>
+            </div>
+
+
+            <div className="column andrew">
+                <div className="content">
+                <img src="./img/houses/andrew/andrew_3d.png" alt="andrew"></img>
+                <h4>andrew</h4>
+                <p>3d</p>
+                </div>
+            </div>
+      
+            <div className="column andrew">
+                <div className="content">
+                <img src="./img/houses/andrew/andrew_elevation.png" alt="andrew"></img>
+                <h4>andrew</h4>
                 <p>Elevation</p>
                 </div>
             </div>

@@ -41,7 +41,17 @@ for (i = 0; i < arr2.length; i++) {
 element.className = arr1.join(" ");
 }
 
+// Name plug
+namePlug = (count) => {
+    console.log("namePlug")
+    var jobName = ""
+    var coutner = count
+    var nameArray = ['alexandra', 'andrew', 'anne', 'cathrine']
+    jobName = nameArray[coutner]   
+}
+
 render(){
+        const jobName = "andrew"
 return(
     <>
         <h1>Image Viewer</h1>
@@ -49,14 +59,38 @@ return(
         
 
         <button className="btn" onClick={() => this.filterSelection('all')}> Show all</button>
-        <button className="btn" onClick={this.filterSelection}> Alexandra</button>
-        <button className="btn" onClick={this.filterSelection}> Cars</button>
-        <button className="btn" onClick={this.filterSelection}> People</button>
+        <button className="btn" onClick={() => this.filterSelection('alexandra')}> Alexandra</button>
+
+        <button className="btn" onClick={() => { this.filterSelection('andrew'); this.namePlug("1");}}>Andrew x2</button>
+        <button className="btn" onClick={() => this.filterSelection('andrew'), this.namePlug("1")}> Andrew</button>
+
+        <button className="btn" onClick={() => this.filterSelection('anne')}> Anne</button>
+        <button className="btn" onClick={() => this.filterSelection('cathrine')}> Cathrine</button>
+        <button className="btn" onClick={() => this.filterSelection('charles')}> Anne</button>
+        <button className="btn" onClick={() => this.filterSelection('charlotte')}> Charlotte</button>
+        <button className="btn" onClick={() => this.filterSelection('edward2')}> Edward2</button>
+        <button className="btn" onClick={() => this.filterSelection('edward3')}> Edward3</button>
+        <button className="btn" onClick={() => this.filterSelection('edward4')}> Edward4</button>
+        <button className="btn" onClick={() => this.filterSelection('ernest')}> Ernest</button>
+        <button className="btn" onClick={() => this.filterSelection('george')}> George</button>
+        <button className="btn" onClick={() => this.filterSelection('james')}> James</button>
+        <button className="btn" onClick={() => this.filterSelection('louis')}> Louis</button>
+        <button className="btn" onClick={() => this.filterSelection('mary')}> Mary</button>
+        <button className="btn" onClick={() => this.filterSelection('victoria')}> Victoria</button>
+        <button className="btn" onClick={() => this.filterSelection('william')}> William</button>
 
 
         <div className="row">
 
-            <div className="column">
+            <div className={jobName}>
+                <div className="content">
+                <img src={"./img/houses/" + `${jobName}` + "/" + `${jobName}` + ".png"} alt={jobName}></img>
+                <h4>{jobName}</h4>
+                <p>test</p>
+                </div>
+            </div>
+
+            <div className="column alexandra">
                 <div className="content">
                 <img src="./img/houses/alexandra/alexandra.png" alt="alexandra"></img>
                 <h4>Alexandra</h4>
@@ -64,7 +98,7 @@ return(
                 </div>
             </div>
 
-            <div className="column">
+            <div className="column alexandra">
                 <div className="content">
                 <img src="./img/houses/alexandra/alexandra_floor.png" alt="alexandra"></img>
                 <h4>Alexandra</h4>
@@ -72,15 +106,8 @@ return(
                 </div>
             </div>
 
-            <div className="column">
-                <div className="content">
-                <img src="./img/houses/alexandra/alexandra_elevation.png" alt="alexandra"></img>
-                <h4>Alexandra</h4>
-                <p>Elevation</p>
-                </div>
-            </div>
 
-            <div className="column">
+            <div className="column alexandra">
                 <div className="content">
                 <img src="./img/houses/alexandra/alexandra_3d.png" alt="alexandra"></img>
                 <h4>Alexandra</h4>
@@ -88,6 +115,14 @@ return(
                 </div>
             </div>
       
+            <div className="column alexandra">
+                <div className="content">
+                <img src="./img/houses/alexandra/alexandra_elevation.png" alt="alexandra"></img>
+                <h4>Alexandra</h4>
+                <p>Elevation</p>
+                </div>
+            </div>
+
         </div>
 
     </>

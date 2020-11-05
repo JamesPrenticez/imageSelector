@@ -120,7 +120,7 @@ export default class ImageUpload extends React.Component {
 						multiple
 					/>
             
-                    <button type="submit" onClick={this.handleSubmit}>Upload</button>
+                    <button type="submit" onClick={this.handleSubmit}>Upload to Server</button>
 
 					<div className={dropClass} 
 						onDrop={this.handleDrop}
@@ -128,10 +128,7 @@ export default class ImageUpload extends React.Component {
 						onDragEnter={this.handleDragEnter}
 						onDragLeave={this.handleDragLeave} >
 						<div className="inside">
-							<span>Drop files here</span>
-							<div>
-								<i className="material-icons">file_upload</i>
-							</div>
+							<span>DRAG & DROP FILES HERE</span>
 						</div>
 					</div>	
 				</div>

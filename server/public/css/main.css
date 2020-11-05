@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 body {
     margin-top: 0px; 
     margin-bottom: 0px; 
@@ -6,6 +10,7 @@ body {
     padding: 0;
     background-color: rgb(204,204,204); 
     font: 12pt "Tahoma";
+    background: linear-gradient(135deg, #919191 20%, #d1d1d1 80%);
 }
 * {
     box-sizing: border-box;
@@ -78,22 +83,16 @@ body {
 /* Upload Image */
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
-html {
-	height: 100%;
-}
-
-body {
-	background: linear-gradient(135deg, #2a99ef 20%, #52d9e5 80%);
-	background-repeat: no-repeat;
-}
 
 .uploadInput {
 	padding: 10px;
 	border: 1px solid #ccc;
-	background: linear-gradient(135deg, #ffa000 20%, #ff5000 80%);
+    border-radius: 5px;
+	background: linear-gradient(135deg, #ff0000d7 10%, #8d4040e1 90%);
 	color: #fff;
-	max-width: 500px;
-	box-shadow: 2px 2px 5px 2px hsla(0, 0%, 0%, 0.15);
+	width: 80%;
+    box-shadow: 2px 2px 5px 2px hsla(0, 0%, 0%, 0.15);
+    margin: 1% auto 1% auto;
 }
 
 .imagePreviewContainer {
@@ -123,7 +122,7 @@ body {
 
 .details h6 {
 	font-size: 10pt;
-	fong-weight: normal;
+	font-weight: normal;
 	color: #999;
 	padding: 5px;
 	margin: 0;

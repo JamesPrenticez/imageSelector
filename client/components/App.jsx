@@ -11,8 +11,8 @@ const App = () => {
     <>
     {/* <ImageSelector/> */}
     {/* <PageScale/> */}
-    {/* <ImageUpload/> */}
-    <ImageUpload2/>
+    <ImageUpload/>
+    {/* <ImageUpload2/> */}
     {/* <ImageViewer/> */}
 
     </>

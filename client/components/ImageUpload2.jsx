@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../node_modules/react-dropzone-uploader/dist/styles.css'
 import Dropzone from 'react-dropzone-uploader'
 
 const ImageUpload2 = () => {

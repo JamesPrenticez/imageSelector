@@ -249,3 +249,104 @@ body {
     background-color: #666;
      color: white;
   }
+
+  .Toc {
+    list-style-type: none;
+    counter-reset: css-counter 0; /* initializes counter to 0; use -1 for zero-based numbering */
+  }
+  
+  .Toc p {
+    counter-increment: css-counter 1; /* Increase the counter by 1. */
+  }
+  
+  .Toc p:before {
+    content: counter(css-counter) ". "; /* Apply counter before children's content. */
+  }
+
+  .Toc ul {
+    list-style-type: none;
+    counter-reset: css-counters 0; /* intializes counter, set -1 for zero-based counters */
+  }
+  
+  .Toc li:before {
+    counter-increment: css-counters;
+    content: counters(css-counters, ".") " "; /* generates inherited counters from parents */
+  }
+
+  .Pagination ul {
+    list-style-type: none;
+    counter-reset: paginate-counter 0;
+  }
+  
+  .Pagination ul li {
+    border: solid 3px #ccc;
+    color: #36f;
+    border: 5px;
+    float: left;
+    margin: 5px;
+    padding: 8px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  /* Setting styles for the inner text */
+  .Pagination ul li:not(.previous):not(.next):before {
+    counter-increment: paginate-counter;
+    content: counter(paginate-counter);
+  }
+/*--------------------------------------------------------------Table Of Contents --------------------------------------------------------------*/
+    
+@media (min-width: 610px) {
+  body {
+          width: 600px;
+  }
+}
+@media (max-width: 610px) {
+  body {
+          width: 80%;
+  }
+}
+html {
+  font-family: 'Crimson Text', serif;
+}
+body {
+  margin: auto;
+}
+a:link{
+  color: inherit;
+}
+footer{
+  margin-bottom: 30px;
+}
+article{
+  counter-reset: heading;
+}
+article h2::before{
+  counter-increment: heading;
+  content: '0'counter(heading)': ';
+}
+#toc h2 {
+  text-transform: uppercase;
+  font-size: 11pt;
+  letter-spacing: 2px;
+}
+#toc h3 {
+  font-weight: normal;
+  font-size: inherit;
+}
+
+ul{
+  list-style: none;
+}
+ul:not(li>ul){
+  padding-left: 0;
+}
+a:link {
+  color: inherit;
+}
+
+#toc {
+  height: 100px;
+  background-color: red;
+}

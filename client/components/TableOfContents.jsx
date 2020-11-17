@@ -4,10 +4,7 @@ import { tableOfContentsX } from './helpers/table_of_contents'
 
 class TableOfContents extends React.Component {
 
-    componentDidMount() {
-		tableOfContentsX()
-		console.log("fire")    
-    }
+
 
 
 
@@ -16,14 +13,8 @@ render(){
 		<>
 
 <p><b>💁 Demo for table of contents with auto-filled text using <a href='https://www.w3.org/TR/shadow-dom/' target="_blank">HTML Slot</a>. <a href='#footer'>Credits &amp; more</a>.</b></p>	
-<h1>Velociraptor</h1>
-
-<div id='toc'>
-	{/* Element get created here */}
-</div>
-
-
-
+<h1>Velociraptor</h1>	
+<div id='toc'></div>	
 <article>
 	<p>Velociraptor (/vᵻˈlɒsᵻræptər/; meaning "swift seizer" in Latin) is a genus of dromaeosaurid theropod dinosaur that lived approximately 75 to 71 million years ago during the later part of the Cretaceous Period. Two species are currently recognized, although others have been assigned in the past. The type species is V. mongoliensis; fossils of this species have been discovered in Mongolia. A second species, V. osmolskae, was named in 2008 for skull material from Inner Mongolia, China.</p>
 
@@ -55,11 +46,6 @@ render(){
 	<p>One Velociratoptor mongoliensis skull bears two parallel rows of small punctures that match the spacing and size of Velociraptor teeth. Scientists believe that the wound was likely inflicted by another Velociraptor during a fight. Further, because the fossil bone shows no sign of healing near the bite wounds, the injury probably killed it. Another specimen, found with the bones of an azhdarchid pterosaur within its stomach cavity, was carrying or recovering from an injury sustained to its ribs. From evidence on the pterosaur bones, which were devoid of pitting or deformations from digestion, the Velociraptor died shortly after, possibly from the earlier injury.</p>
 </article>
 
-<footer id='footer'>
-	✰ <strong>Credit</strong>: <br /> Text derived from the Wikipedia article on Velociraptor.<br />
-	✰ <strong>Github</strong>: <br /> <a href='https://github.com/hongkiat/html-slot-toc' target='_blank'>https://github.com/hongkiat/html-slot-toc</a><br />
-	✰ <strong>Download</strong>: <br /> <a href='https://github.com/hongkiat/html-slot-toc/archive/master.zip' target='_blank'>https://github.com/hongkiat/html-slot-toc/archive/master.zip</a>
-</footer>
 
 <template>
 	<ul>
@@ -85,6 +71,10 @@ render(){
 
 		</>
 	)
+}
+componentDidMount() {
+	tableOfContentsX()
+	console.log("fire")    
 }
 }
 

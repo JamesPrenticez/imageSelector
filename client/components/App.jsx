@@ -7,6 +7,7 @@ import ImageUpload2 from './ImageUpload2'
 import ImageViewer from './ImageViewer'
 import Toc from './Toc'
 import TableOfContents from './TableOfContents'
+import Slideshow from './Slideshow'
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
     {/* <ImageUpload2/> */}
     {/* <ImageViewer/> */}
     {/* <Toc/> */}
-    <TableOfContents/>
+    {/* <TableOfContents/> */}
+    <Slideshow/>
     </>
   )
 }

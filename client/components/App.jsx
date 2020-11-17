@@ -9,6 +9,16 @@ import Toc from './Toc'
 import TableOfContents from './TableOfContents'
 import Slideshow from './Slideshow'
 
+
+const imgUrls = [
+  "../img/default.png",
+  "../img/brick.png",
+  "../img/cedar.png",
+  "../img/linea.png",
+  "../img/oblique.png",
+  "../img/rockcote.png"
+];
+
 const App = () => {
   return (
     <>
@@ -19,7 +29,7 @@ const App = () => {
     {/* <ImageViewer/> */}
     {/* <Toc/> */}
     {/* <TableOfContents/> */}
-    <Slideshow/>
+    <Slideshow imgUrls={imgUrls}/>
     </>
   )
 }

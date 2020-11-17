@@ -1,87 +1,28 @@
-/*-----------------------------------Slide Show------------------------------------------*/
-* {
-  box-sizing: border-box;
+html, body, #container, .carousel {
+	height:100%;
+	margin: 0;
+	width: 100%;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
+.image-slide {
+	height: 100VH;
+  width: 100VW;
+  background-color: green;
+	/* transition: background-image .3s ease-in-out; */
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.slide-arrow {
+	color: #14B6D4;
+	cursor: pointer;
+	font-size: 2rem;
+	position: fixed;
+	top: 50%;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
+.slide-arrow.right {
+	right: 1rem;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
+.slide-arrow.left {
+	left: 1rem;
 }

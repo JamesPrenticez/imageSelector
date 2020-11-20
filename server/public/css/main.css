@@ -1,28 +1,49 @@
-html, body, #container, .carousel {
-	height:100%;
-	margin: 0;
-	width: 100%;
-}
 
 .image-slide {
-	height: 100VH;
-  width: 100VW;
-  background-color: green;
+	height: 500px;
+	width: 500px;
+	margin: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: darkgrey;
 	/* transition: background-image .3s ease-in-out; */
 }
 
-.slide-arrow {
-	color: #14B6D4;
+
+/*-----------------------------------Slide Show------------------------------------------*
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	margin-top: 49%;
 	cursor: pointer;
-	font-size: 2rem;
-	position: fixed;
-	top: 50%;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	user-select: none;
+	-webkit-user-select: none;
+	height: 30px;
+	width: 20px;
+	transition: 0.6s ease;
 }
 
-.slide-arrow.right {
-	right: 1rem;
+/* Position the "next button" to the right */
+.next {
+	float: right;	
+	border-radius: 3px 0 0 3px;
 }
 
-.slide-arrow.left {
-	left: 1rem;
-}
+.prev{
+	float: left;
+	border-radius: 0 3px 3px 0;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.7);
+  }
+  

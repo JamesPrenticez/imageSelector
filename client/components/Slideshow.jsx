@@ -1,7 +1,4 @@
 import React from 'react'
-import ImageSlide from './ImageSlide'
-import Arrow from './Arrow'
-
 
 export default class Slideshow extends React.Component {
     constructor(props) {
@@ -39,11 +36,13 @@ export default class Slideshow extends React.Component {
 	render () {
 		return (
 			<>
-			<div className="carousel">
-				<Arrow direction="left" clickFunction={ this.previousSlide } glyph="&#9664;" />
-				<ImageSlide url={ this.props.imgUrls[this.state.currentImageIndex] } />
-				<Arrow direction="right" clickFunction={ this.nextSlide } glyph="&#9654;" />
-			</div>
+
+
+					<div className="image-slide" style={{ backgroundImage: `url(${this.props.imgUrls[this.state.currentImageIndex]})` }}>
+						<div className="prev" onClick={this.previousSlide}>&#10094;</div>
+						<div className="next" onClick={this.nextSlide}>&#10095;</div>
+					</div>
+
 			</>
 		);
 	}

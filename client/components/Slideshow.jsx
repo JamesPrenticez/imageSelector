@@ -32,8 +32,14 @@ export default class Slideshow extends React.Component {
 		console.log(index)
 	}
 
-	selectedSlide () {
-		console.log('hi')
+	selectedSlide (index) {
+		const cat = JSON.stringify(Object.values(index))
+		const {currentImageIndex} = this.state; //0
+		this.setState({
+			currentImageIndex: this.props.imgUrls + cat
+		});
+
+		console.log(JSON.stringify(`${this.props.imgUrls+cat))
 	}
     
     
@@ -45,21 +51,22 @@ export default class Slideshow extends React.Component {
 							`${this.props.imgUrls[3]}`,
 							`${this.props.imgUrls[4]}`,
 						]
+
 		return (
 			<>
 			<div className="jobContainer">
 				<div className="carousel">
-						<div className="main">
+
 							<div className="image-slide" style={{backgroundImage: `url(${this.props.imgUrls[this.state.currentImageIndex]})`}}>
-								<div className="prev" onClick={this.previousSlide}>&#10094;</div>
-								<div className="next" onClick={this.nextSlide}>&#10095;</div>
+								<div className="prev" onClick={() => {this.previousSlide()}}>&#10094;</div>
+								<div className="next" onClick={() => {this.nextSlide()}}>&#10095;</div>
 							</div>
-						</div>
+
 
 						<div className="thumbnail">
 							{elements.map((value, index) => {
 								return  <li key={index}>
-											<div className="thumb" style={{backgroundImage: `url(${value})`}} onClick={this.selectedSlide}></div>
+											<div className="thumb" style={{backgroundImage: `url(${value})`}} onClick={() => {this.selectedSlide({index})}}></div>
 										</li>
 								})}		
 						</div>

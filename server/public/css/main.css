@@ -28,7 +28,6 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: darkgrey;
-	transition: background-image .3s ease-in-out;
 }
 
 .prev, .next {
@@ -38,11 +37,8 @@
 	color: white;
 	font-weight: bold;
 	font-size: 20px;
-	user-select: none;
-	-webkit-user-select: none;
 	height: 30px;
 	width: 20px;
-	transition: 0.6s ease;
 }
 
 .next {

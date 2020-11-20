@@ -39,7 +39,7 @@ export default class Slideshow extends React.Component {
 			currentImageIndex: this.props.imgUrls + cat
 		});
 
-		console.log(JSON.stringify(`${this.props.imgUrls+cat))
+
 	}
     
     

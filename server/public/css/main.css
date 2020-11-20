@@ -1,21 +1,37 @@
+.jobContainer {
+    background-color: white;
+    margin: 5px auto;
+    border-radius: 5px;
+    height: auto;
+    width: 80%;
+    padding: 2%;
+    border: 1px solid;
+    box-shadow: 5px 10px 8px 10px #888888;
+}
+
+
+.carousel{
+	background-color: khaki;
+	width: 500px;
+	height: 600px;
+	position: relative;
+	margin: auto;
+	border: 1px solid;
+	border-radius: 5px;
+}
 
 .image-slide {
 	height: 500px;
 	width: 500px;
 	margin: auto;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: darkgrey;
-	/* transition: background-image .3s ease-in-out; */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: darkgrey;
+	transition: background-image .3s ease-in-out;
 }
 
-
-/*-----------------------------------Slide Show------------------------------------------*
-
-  /* Next & previous buttons */
-  .prev,
-  .next {
+.prev, .next {
 	margin-top: 49%;
 	cursor: pointer;
 	padding: 16px;
@@ -29,7 +45,6 @@
 	transition: 0.6s ease;
 }
 
-/* Position the "next button" to the right */
 .next {
 	float: right;	
 	border-radius: 3px 0 0 3px;
@@ -38,12 +53,39 @@
 .prev{
 	float: left;
 	border-radius: 0 3px 3px 0;
-  }
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+.prev:hover, .next:hover {
 	cursor: pointer;
 	background-color: rgba(0, 0, 0, 0.7);
-  }
-  
+}
+
+.thumbnail {
+	position: absolute; 
+	width: 500px;
+	bottom: 0;
+	height: 100px;
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 100%;
+	justify-content: space-evenly;
+}
+
+.thumb {
+	height:100%;
+	width:100%;
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: darkgrey;
+}
+	
+.thumb:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+li {
+	list-style-type: none;
+	display: inline-block;
+}

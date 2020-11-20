@@ -31,18 +31,40 @@ export default class Slideshow extends React.Component {
 		});
 		console.log(index)
 	}
+
+	selectedSlide () {
+		console.log('hi')
+	}
     
     
 	render () {
+		const elements = [
+							`${this.props.imgUrls[0]}`,
+							`${this.props.imgUrls[1]}`,
+							`${this.props.imgUrls[2]}`,
+							`${this.props.imgUrls[3]}`,
+							`${this.props.imgUrls[4]}`,
+						]
 		return (
 			<>
+			<div className="jobContainer">
+				<div className="carousel">
+						<div className="main">
+							<div className="image-slide" style={{backgroundImage: `url(${this.props.imgUrls[this.state.currentImageIndex]})`}}>
+								<div className="prev" onClick={this.previousSlide}>&#10094;</div>
+								<div className="next" onClick={this.nextSlide}>&#10095;</div>
+							</div>
+						</div>
 
-
-					<div className="image-slide" style={{ backgroundImage: `url(${this.props.imgUrls[this.state.currentImageIndex]})` }}>
-						<div className="prev" onClick={this.previousSlide}>&#10094;</div>
-						<div className="next" onClick={this.nextSlide}>&#10095;</div>
-					</div>
-
+						<div className="thumbnail">
+							{elements.map((value, index) => {
+								return  <li key={index}>
+											<div className="thumb" style={{backgroundImage: `url(${value})`}} onClick={this.selectedSlide}></div>
+										</li>
+								})}		
+						</div>
+				</div>
+			</div>
 			</>
 		);
 	}

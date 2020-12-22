@@ -8,7 +8,7 @@ function Footer() {
 
     return (
         <>
-            <footer>Footer</footer>
+            <Footer>Footer</Footer>
         </>
     )
 }

@@ -7,7 +7,7 @@ module.exports = router
 //Get houses and display on main page
 router.get('/api/v1/houses', (req, res) => {
   db.getHouses()
-    .then(callback => res.json({recipes: callback}))
+    .then(callback => res.json({houses: callback}))
     .catch(err => {
         res.status(500).send('something went wrong')
   })

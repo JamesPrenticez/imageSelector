@@ -5,7 +5,7 @@ export default class ImageViewer extends React.Component {
 filterSelection = (c) => {
     var x, i;
     x = document.getElementsByClassName("row");
-console.log(x)
+// console.log(x)
     if (c == "all") c = "";
     // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
     for (i = 0; i < x.length; i++) {

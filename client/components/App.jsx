@@ -6,7 +6,7 @@ import Nav from './Nav'
 import Sidebar from './Sidebar'
 
 // import ImageViewer from './ImageViewer'
-import HouseViewer from './HouseViewer'
+import HouseList from './HouseList'
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
     <Sidebar/>
 <main>
     {/* <ImageViewer/> */}
-    <HouseViewer/>
+    <HouseList/>
 </main>
     <Footer/>
 

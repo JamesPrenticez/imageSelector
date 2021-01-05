@@ -11,15 +11,15 @@ class HouseListItem extends React.Component {
                 <div className="content">
 
                 <div className="text">
-                <b>Name:</b> {house.name}
-                <b>GFA:</b> {house.gfa}
-                <b>Cost:</b> {house.cost}
-                <b>Description:</b> {house.description}        
+                <h6>Name:{house.name}</h6>
+                <h6>GFA: {house.gfa}</h6>
+                <h6>Cost: {house.cost}</h6>
+                <h6>Description: {house.description}</h6>
                 </div>
 
-                <img style={{ backgroundImage: `url(${house.image_elevation})` }}></img>
+                <img style={{ backgroundImage: `url(${house.image_elevations})` }}></img>
                 <img style={{ backgroundImage: `url(${house.image_3d})` }}></img>
-                <img style={{ backgroundImage: `url(${house.image_floor})` }}></img>
+                <img style={{ backgroundImage: `url(${house.image_plan})` }}></img>
                 <img style={{ backgroundImage: `url(${house.image_cover})` }}></img>
 
                 </div>

@@ -17,7 +17,6 @@ main {
   width: 85VW;
   height: 100%;
   margin-left: 15VW;
-  background-color: #444444;
 }
 
 header{
@@ -52,8 +51,7 @@ header{
 
   /* The "show" class is added to the filtered elements */
   .show {
-    display: inline-block;
-    float: right;
+  display: inline-block;
   }
 
   /* Content */
@@ -62,24 +60,23 @@ header{
     border-top: 3px solid #EC2027;
     border-radius: 3px;
     height: 20VH;
+    width: 84VW;
   }
 
   .content img {
-      height: 90%;
-      width: 15%;
-      border: 2px solid grey;
-      border-radius: 3px;
-      object-fit: cover;
-      margin: 5px;
-      float: right;
+    height: 90%;
+    width: 15%;
+    border: 2px solid grey;
+    border-radius: 3px;
+    margin: 5px;
+    float: right;
+    background-size: cover;
   }
 
 .text {
       height: 90%;
       width: 25%;
-      margin: 5px;
-      padding: 5px;
-      float: left;
+      display: inline-block;
 }
 
 h2{

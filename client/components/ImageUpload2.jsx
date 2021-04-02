@@ -4,7 +4,7 @@ import Dropzone from 'react-dropzone-uploader'
 
 const ImageUpload2 = () => {
 		// specify upload params and url for your files
-		const getUploadParams = ({ meta }) => { return { url: 'https://httpbin.org/post' } }
+		const getUploadParams = ({ meta }) => { return { url: './img/upload' } }
 		
 		// called every time a file's `status` changes
 		const handleChangeStatus = ({ meta, file }, status) => { console.log(status, meta, file) }
